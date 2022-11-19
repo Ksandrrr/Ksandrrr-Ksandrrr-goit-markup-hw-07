@@ -1,0 +1,45 @@
+.section-customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    & h2 {
+        text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.16;
+    }
+}
+
+.section-customers__list {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.section-customers__link {
+    width: 170px;
+    min-height: 92px;
+    border: 1px solid var(--fill-main-color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    border: 1px solid var(--brand-color);
+    }
+    &:hover .section-customers__icon,
+    &:focus .section-customers__icon {
+    fill: var(--brand-color);
+    }
+
+}
+
+.section-customers__icon {
+    fill: var(--fill-main-color);
+    transition: fill 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+

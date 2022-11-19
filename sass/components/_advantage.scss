@@ -1,0 +1,41 @@
+.studio-section__advantage {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.studio-section__item {
+    width: 270px;
+    margin-right: 30px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+/* ІКОНКИ */
+.studio-section__group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: var(--second-background-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+
+// .studio-section__item:last-child {
+//     margin-right: 0;
+// }
+
+.studio-section__name {
+    line-height: 1.14;
+    font-weight: 700;
+}
+
+.studio-section__text {
+    margin-top: 10px;
+
+    line-height: 1.71;
+    color: var(--second-text-color);
+}
