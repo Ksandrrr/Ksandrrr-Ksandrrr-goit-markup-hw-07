@@ -1,121 +1,112 @@
 .header {
-    border-bottom: 1px solid #ececec;
-    height: 80px;
+  border-bottom: 1px solid #ececec;
+  height: 80px;
 }
 
 .mein {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-nav>ul {
-    display: flex;
+nav > ul {
+  display: flex;
 }
 
 .communication {
-    display: flex;
-    margin-left: auto;
-    gap: 50px;
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
 }
 
 .header-logo {
-    color: var(--main-text-color);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.17;
-    font-family: 'Raleway', sans-serif;
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  font-family: 'Raleway', sans-serif;
 }
 
 .logo-first-word {
-    color: var(--brand-color);
-    font-weight: 700;
+  color: var(--brand-color);
+  font-weight: 700;
 }
 
 .header-navigation {
-    margin-left: 93px;
+  margin-left: 93px;
 }
 
 .header-item {
-    display: flex;
-    margin-right: 50px;
-    &:last-child {
-        margin-right: 0px;
-    }
+  display: flex;
+  margin-right: 50px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
-
-
 .header-navigation a {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: var(--main-text-color);
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    font-weight: 500;
-    transition: color 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-        color: var(--brand-color);
-    }
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--main-text-color);
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
 }
 
 .communication-list {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .communication-icon {
-    fill: var(--second-text-color);
-    margin-right: 10px;
-    transition: fill 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--second-text-color);
+  margin-right: 10px;
+  transition: fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .communication-link {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    color: var(--second-text-color);
-    line-height: 1.17;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    transition: color 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover .communication-icon,
-    &:hover .communication-icon {
-        fill: var(--brand-color);
-    }
-
+  color: var(--second-text-color);
+  line-height: 1.17;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover .communication-icon,
+  &:hover .communication-icon {
+    fill: var(--brand-color);
+  }
 }
-
-
 
 .communication a:hover,
 .communicationt a:focus {
-    color: var(--brand-color);
+  color: var(--brand-color);
 }
 
-
 .header-link {
-    position: relative;
-    &.current {
-        color: var(--brand-color);
-    }
+  position: relative;
+  &.current {
+    color: var(--brand-color);
+  }
 }
 
 .header-link.current::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--brand-color);
-    border-radius: 10px;
-
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--brand-color);
+  border-radius: 10px;
 }
-

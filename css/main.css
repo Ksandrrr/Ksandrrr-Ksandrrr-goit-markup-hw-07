@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --brand-color: #2196f3;
   --main-text-color: #212121;
@@ -126,7 +125,6 @@ p {
   margin-right: 0;
 }
 
-/* ІКОНКИ */
 .studio-section__group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -272,15 +270,6 @@ p {
   font-size: 12px;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
-}
-
-.call-form-label-checkbox {
-  color: var(--second-text-color);
-}
-
-.call-form-label-checkbox a {
-  color: var(--brand-color);
-  border-bottom: 1px solid var(--brand-color);
 }
 
 .call-form-checkbox {
@@ -488,18 +477,18 @@ footer {
   color: var(--brand-color);
 }
 
-address p {
+.footer-group__addres {
   margin-top: 20px;
   color: var(--last-text-color);
   font-style: normal;
   line-height: 1.7;
 }
 
-.footer-communication-links li {
+.footer-communication-item {
   margin-bottom: 9px;
   margin-top: 9px;
 }
-.footer-communication-links li:last-child {
+.footer-communication-item:last-child {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -512,7 +501,7 @@ address p {
   margin-top: 20px;
 }
 
-.footer-group h3 {
+.footer-group__name {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -768,7 +757,7 @@ nav > ul {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
-.portfolio-box-text p {
+.portfolio-box-text .portfolio-box__description {
   color: var(--second-text-color);
   line-height: 1.87;
 }
@@ -777,6 +766,12 @@ nav > ul {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+}
+.list-portfolio-item:nth-child(3n) {
+  margin-right: 0;
+}
+.list-portfolio-item:nth-last-child(-n+3) {
+  margin-bottom: 0;
 }
 
 .list-portfolio-group {
@@ -814,26 +809,14 @@ nav > ul {
   transition: transform 250ms ease;
   transition: transform 250ms ease, -webkit-transform 250ms ease;
 }
-.list-portfolio-overlay > p {
+
+.list-portfolio-text {
   color: var(--last-text-color);
   display: block;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
-}
-
-.list-portfolio-link:hover .list-portfolio-overlay {
-  -webkit-transform: translatey(0);
-          transform: translatey(0);
-}
-
-.list-portfolio li:nth-child(3n) {
-  margin-right: 0;
-}
-
-.list-portfolio li:nth-last-child(-n+3) {
-  margin-bottom: 0;
 }
 
 .list-portfolio {
@@ -844,18 +827,15 @@ nav > ul {
       flex-wrap: wrap;
   margin-top: 50px;
 }
-.list-portfolio a:hover, .list-portfolio a:focus {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.list-portfolio h2 {
+.list-portfolio .portfolio-box__name {
   margin-bottom: 4px;
   color: var(--main-text-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.list-portfolio a {
+
+.list-portfolio-link {
   display: block;
   -webkit-transition: -webkit-box-shadow 250ms;
   transition: -webkit-box-shadow 250ms;
@@ -864,12 +844,21 @@ nav > ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.list-portfolio-link:hover, .list-portfolio-link:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.list-portfolio-link:hover .list-portfolio-overlay {
+  -webkit-transform: translatey(0);
+          transform: translatey(0);
+}
 
 .section-customers {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section-customers h2 {
+
+.section-customers__name {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -918,14 +907,14 @@ nav > ul {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-button-all.current {
+.portfolio-filter__button.current {
   background-color: var(--brand-color);
   color: var(--last-text-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.portfolio-button-filter {
+.portfolio-filter__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -934,14 +923,14 @@ nav > ul {
           justify-content: center;
 }
 
-.filter-button {
+.portfolio-filter__item {
   margin-right: 8px;
 }
-.filter-button:last-child {
+.portfolio-filter__item:last-child {
   margin-right: 0;
 }
 
-.portfolio-button-filter button {
+.portfolio-filter__button {
   background-color: var(--second-background-color);
   cursor: pointer;
   font-weight: 500;
@@ -960,7 +949,7 @@ nav > ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-button-filter button:hover, .portfolio-button-filter button:focus {
+.portfolio-filter__button:hover, .portfolio-filter__button:focus {
   background-color: var(--brand-color);
   color: var(--last-text-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1063,7 +1052,7 @@ nav > ul {
   color: var(--second-text-color);
 }
 
-.list-social-link {
+.section-team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1074,7 +1063,7 @@ nav > ul {
   margin-bottom: 30px;
 }
 
-.social-link {
+.section-team__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1092,14 +1081,14 @@ nav > ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-link:hover, .social-link:focus {
+.section-team__link:hover, .section-team__link:focus {
   background-color: var(--brand-color);
 }
-.social-link:hover .icon, .social-link:focus .icon {
+.section-team__link:hover .section-team__icon, .section-team__link:focus .section-team__icon {
   fill: var(--last-text-color);
 }
 
-.icon {
+.section-team__icon {
   fill: var(--fill-main-color);
   -webkit-transition: fill, 250ms;
   transition: fill, 250ms;

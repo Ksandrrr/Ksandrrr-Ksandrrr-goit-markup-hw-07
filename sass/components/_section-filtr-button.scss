@@ -1,22 +1,22 @@
-.filter-button-all.current {
+.portfolio-filter__button.current {
   background-color: var(--brand-color);
   color: var(--last-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.portfolio-button-filter {
+.portfolio-filter__list {
   display: flex;
   justify-content: center;
 }
 
-.filter-button {
+.portfolio-filter__item {
   margin-right: 8px;
   &:last-child {
     margin-right: 0;
   }
 }
 
-.portfolio-button-filter button {
+.portfolio-filter__button {
   background-color: var(--second-background-color);
   cursor: pointer;
   font-weight: 500;
